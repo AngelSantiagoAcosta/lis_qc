@@ -545,12 +545,12 @@ def process_all(dir):
                 shutil.move(input_file_path,(success_directory +"/"+input_file_name))
 
 
-if __name__ == '__main__':   
+# if __name__ == '__main__':   
 
-    ########## INPUT HERE ###########
-    #dir should be the only thing needing to change on the server.
-    dir = r"\lis_qc\lis_data"
-    process_all(dir)
+#     ########## INPUT HERE ###########
+#     #dir should be the only thing needing to change on the server.
+#     dir = r"\lis_qc\lis_data"
+#     process_all(dir)
 
 
 
