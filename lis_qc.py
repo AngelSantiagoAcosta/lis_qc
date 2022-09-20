@@ -518,7 +518,7 @@ def process_lis_data(input_file_path,output_directory):
     input_file_name = os.path.basename(input_file_path)
     output_string = input_file_name.split(".")[0]
     date = datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")
-    output_file = f"\Validation Results for {output_string} {date}.xlsx"
+    output_file = f"Validation Results for {output_string} {date}.xlsx"
     output_path = output_directory + "/" + output_file
     df = read_excel_file(input_file_path)
     original_data = df.copy()
