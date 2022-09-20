@@ -243,6 +243,8 @@ def validation_36(df):
     
 @flow
 def apply_validation_checks(df):
+    df.fillna("",inplace=True) # this fixed the issue of blank columns throwing .str data accessor issue
+
     df["Validation 6"] = validation_6(df)
     df["Validation 7"] = validation_7(df)
     test_result_float = test_result_convert_to_float(df["Reported As"])
